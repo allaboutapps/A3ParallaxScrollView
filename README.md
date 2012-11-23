@@ -1,6 +1,7 @@
  
 #What is A3ParalaxScrollView?
-**A3ParalaxScrollView** is a `UIScrollView` with a parallax scrolling effect.  
+**A3ParalaxScrollView** is a `UIScrollView` subclass with a parallax scrolling effect.  
+
 It is written in *Objective-C* and works for all iOS applications.  
 ARC is not enabled for the project, but you can easily convert it to arc with the XCode built in ARC converter or by remove the dealloc method and the two or three releases.  
 If you are too lazy for that, you can still set the `-fno-objc-arc` flag.
@@ -11,7 +12,7 @@ If you are too lazy for that, you can still set the `-fno-objc-arc` flag.
 ##Usage:
 Add the QuartzCore Framework and the **A3ParallaxScrollView** directory to your project.  
 Initialize a **A3ParallaxScrollView** like any other View by code or in the InterfaceBuilder.
-Now you can add any view to it with an specified acceleration:
+Now you can add any views to it with a specified acceleration:
 
 `- (void)addSubview:(UIView *)view withAcceleration:(CGPoint) acceleration`
 
