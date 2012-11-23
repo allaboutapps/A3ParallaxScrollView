@@ -20,7 +20,7 @@ or you can simply add a subview to your **A3ParallaxScrollView** and set his acc
 `- (void)setAcceleration:(CGPoint) acceleration forView:(UIView *)view`
  
 #License:
-The BSD 3-Clause License
+[See our BSD 3-Clause License](https://github.com/allaboutapps/A3ParallaxScrollView/blob/master/LICENSE.txt)
 
 #Contribute:
 Feel free to fork and make pull requests! We are also very happy if you tell us about your app(s) which use this control.  
