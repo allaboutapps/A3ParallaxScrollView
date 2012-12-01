@@ -33,7 +33,7 @@
 		885BA83C16398CC6007BCB8B /* moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83A16398CC6007BCB8B /* moon@2x.png */; };
 		885BA83F163997A7007BCB8B /* stars-backgorund.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83D163997A7007BCB8B /* stars-backgorund.png */; };
 		885BA840163997A7007BCB8B /* stars-backgorund@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83E163997A7007BCB8B /* stars-backgorund@2x.png */; };
-		88FDE491165ED4F600CE3CC1 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FDE490165ED4F600CE3CC1 /* A3ParallaxScrollView.m */; };
+		889D574E166A94C100F7D5E5 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889D574D166A94C100F7D5E5 /* A3ParallaxScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,8 +69,8 @@
 		885BA83A16398CC6007BCB8B /* moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon@2x.png"; sourceTree = "<group>"; };
 		885BA83D163997A7007BCB8B /* stars-backgorund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-backgorund.png"; sourceTree = "<group>"; };
 		885BA83E163997A7007BCB8B /* stars-backgorund@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-backgorund@2x.png"; sourceTree = "<group>"; };
-		88FDE48F165ED4F600CE3CC1 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3ParallaxScrollView.h; sourceTree = "<group>"; };
-		88FDE490165ED4F600CE3CC1 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3ParallaxScrollView.m; sourceTree = "<group>"; };
+		889D574C166A94C100F7D5E5 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3ParallaxScrollView.h; sourceTree = "<group>"; };
+		889D574D166A94C100F7D5E5 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3ParallaxScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				885BA82C163986CB007BCB8B /* QuartzCore.framework */,
-				88FDE48E165ED4F600CE3CC1 /* A3ParallaxScrollView */,
+				889D574B166A94C100F7D5E5 /* A3ParallaxScrollView */,
 				882AC7961637F38000E8A221 /* A3ParallaxScrollViewSample */,
 				882AC78F1637F38000E8A221 /* Frameworks */,
 				882AC78D1637F38000E8A221 /* Products */,
@@ -160,13 +160,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		88FDE48E165ED4F600CE3CC1 /* A3ParallaxScrollView */ = {
+		889D574B166A94C100F7D5E5 /* A3ParallaxScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				88FDE48F165ED4F600CE3CC1 /* A3ParallaxScrollView.h */,
-				88FDE490165ED4F600CE3CC1 /* A3ParallaxScrollView.m */,
+				889D574C166A94C100F7D5E5 /* A3ParallaxScrollView.h */,
+				889D574D166A94C100F7D5E5 /* A3ParallaxScrollView.m */,
 			);
-			path = A3ParallaxScrollView;
+			name = A3ParallaxScrollView;
+			path = ../A3ParallaxScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +254,7 @@
 				882AC79D1637F38000E8A221 /* main.m in Sources */,
 				882AC7A11637F38000E8A221 /* A3AppDelegate.m in Sources */,
 				882AC7AA1637F38000E8A221 /* A3ViewController.m in Sources */,
-				88FDE491165ED4F600CE3CC1 /* A3ParallaxScrollView.m in Sources */,
+				889D574E166A94C100F7D5E5 /* A3ParallaxScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

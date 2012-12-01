@@ -35,6 +35,8 @@
 //  NO DOUGHNUTS WHERE HARMED DURING THE CODING OF THIS CLASS. BUT CHEESECAKES
 //  WHERE. IF YOU READ THIS YOU ARE EITHER BORED OR A LAWYER.
 
+/// default acceleration Behaviour is CGGoint{1.0f, 1.0f}
+extern CGPoint const A3DefaultAcceleration;
 
 #import <UIKit/UIKit.h>
 

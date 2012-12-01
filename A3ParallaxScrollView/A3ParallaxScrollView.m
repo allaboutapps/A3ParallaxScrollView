@@ -35,6 +35,7 @@
 //  NO DOUGHNUTS WHERE HARMED DURING THE CODING OF THIS CLASS. BUT CHEESECAKES
 //  WHERE. IF YOU READ THIS YOU ARE EITHER BORED OR A LAWYER.
 
+CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 
 #import "A3ParallaxScrollView.h"
 @interface A3ParallaxScrollView ()
@@ -91,7 +92,7 @@
 #pragma mark - logic
 
 - (void)addSubview:(UIView *)view{
-    [self addSubview:view withAcceleration:CGPointMake(1.0f, 1.0f)];
+    [self addSubview:view withAcceleration:A3DefaultAcceleration];
 }
 
 
