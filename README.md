@@ -8,6 +8,7 @@ If you are too lazy for that, you can still set the `-fno-objc-arc` flag.
 
 ##Video:
 ![A3ParallaxScrollView sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewSample.gif "A3ParallaxScrollView Sample Video")
+![A3ParallaxScrollView Path like sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewPathSample.gif "A3ParallaxScrollView Path like Sample Video")
 
 ##Usage:
 Add the QuartzCore Framework and the **A3ParallaxScrollView** directory to your project.  
