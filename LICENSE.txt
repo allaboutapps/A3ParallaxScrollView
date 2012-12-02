@@ -47,6 +47,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
  A3ParallaxScrollView for iOS
  Copyright (c) 2012, aaa - All About Apps
+ Developed by Botond Kis
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without modification,
