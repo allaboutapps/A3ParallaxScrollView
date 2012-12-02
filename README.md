@@ -8,7 +8,7 @@ If you are too lazy for that, you can still set the `-fno-objc-arc` compiler fla
 
 ##Video:
 Here are two examples of the use of **A3ParallaxScrollView**.  
-The first is a little Demo with a lot of views and additional custom transformations (sin movement of the moon). The other one shows a *Path* like scrolling behaviour.
+The first is a little Demo with a lot of views and additional custom transformations (sin movement of the moon). The other one shows a *Path* like scrolling behaviour.  
 ![A3ParallaxScrollView sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewSample.gif "A3ParallaxScrollView Sample Video")
 ![A3ParallaxScrollView Path like sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewPathSample.gif "A3ParallaxScrollView Path like Sample Video")  
 Both sample projects are in the repository.
