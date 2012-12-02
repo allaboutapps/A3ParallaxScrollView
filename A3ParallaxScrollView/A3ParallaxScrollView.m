@@ -5,6 +5,7 @@
 //  A3ParallaxScrollView for iOS
 //  Created by Botond Kis on 24.10.12.
 //  Copyright (c) 2012 aaa - All About Apps
+//  Developed by Botond Kis
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification,
@@ -145,16 +146,3 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
