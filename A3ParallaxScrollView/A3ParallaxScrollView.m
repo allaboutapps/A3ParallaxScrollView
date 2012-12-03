@@ -36,9 +36,10 @@
 //  NO DOUGHNUTS WHERE HARMED DURING THE CODING OF THIS CLASS. BUT CHEESECAKES
 //  WHERE. IF YOU READ THIS YOU ARE EITHER BORED OR A LAWYER.
 
+#import "A3ParallaxScrollView.h"
+
 CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 
-#import "A3ParallaxScrollView.h"
 @interface A3ParallaxScrollView ()
 @property (nonatomic, retain) NSMutableDictionary *_accelerationsOfSubViews;
 
