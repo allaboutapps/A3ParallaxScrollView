@@ -108,7 +108,7 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 - (void)setAcceleration:(CGPoint) acceleration forView:(UIView *)view{
     // store acceleration
     NSValue *pointValue = [NSValue value:&acceleration withObjCType:@encode(CGPoint)];
-    [self._accelerationsOfSubViews setObject:pointValue forKey:[NSNumber numberWithInt:(int)view]];
+    [self._accelerationsOfSubViews setObject:pointValue forKey:@((int)view)];
 }
 
 - (CGPoint)accelerationForView:(UIView *)view{
@@ -117,7 +117,7 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
     CGPoint accelecration;
     
     // get acceleration
-    NSValue *pointValue = [self._accelerationsOfSubViews objectForKey:[NSNumber numberWithInteger:(int)view]];
+    NSValue *pointValue = [self._accelerationsOfSubViews objectForKey:@((int)view)];
     if(pointValue == nil){
         accelecration = CGPointZero;
     }
@@ -129,7 +129,7 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 }
 
 - (void)willRemoveSubview:(UIView *)subview{
-    [self._accelerationsOfSubViews removeObjectForKey:[NSNumber numberWithInt:(int)subview]];
+    [self._accelerationsOfSubViews removeObjectForKey:@((int)subview)];
 }
 
 //====================================================================
