@@ -3,7 +3,7 @@
 //  A3ParallaxScrollViewSample
 //
 //  Created by Botond Kis on 24.10.12.
-//  Copyright (c) 2012 AllAboutApps. All rights reserved.
+//  Copyright (c) 2013 AllAboutApps. All rights reserved.
 //
 
 #import "A3AppDelegate.h"
@@ -12,18 +12,12 @@
 
 @implementation A3AppDelegate
 
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[[A3ViewController alloc] initWithNibName:@"A3ViewController" bundle:nil] autorelease];
+    self.viewController = [[A3ViewController alloc] initWithNibName:@"A3ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

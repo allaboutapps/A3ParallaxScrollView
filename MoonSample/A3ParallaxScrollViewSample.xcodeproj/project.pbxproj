@@ -7,36 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882818C2185F4C0E0081D962 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882818C1185F4C0E0081D962 /* Images.xcassets */; };
 		882AC7911637F38000E8A221 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882AC7901637F38000E8A221 /* UIKit.framework */; };
 		882AC7931637F38000E8A221 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882AC7921637F38000E8A221 /* Foundation.framework */; };
 		882AC7951637F38000E8A221 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882AC7941637F38000E8A221 /* CoreGraphics.framework */; };
 		882AC79B1637F38000E8A221 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 882AC7991637F38000E8A221 /* InfoPlist.strings */; };
 		882AC79D1637F38000E8A221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882AC79C1637F38000E8A221 /* main.m */; };
 		882AC7A11637F38000E8A221 /* A3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882AC7A01637F38000E8A221 /* A3AppDelegate.m */; };
-		882AC7A31637F38000E8A221 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 882AC7A21637F38000E8A221 /* Default.png */; };
-		882AC7A51637F38000E8A221 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882AC7A41637F38000E8A221 /* Default@2x.png */; };
-		882AC7A71637F38000E8A221 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882AC7A61637F38000E8A221 /* Default-568h@2x.png */; };
 		882AC7AA1637F38000E8A221 /* A3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882AC7A91637F38000E8A221 /* A3ViewController.m */; };
 		882AC7AD1637F38000E8A221 /* A3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882AC7AB1637F38000E8A221 /* A3ViewController.xib */; };
-		885BA81416392E2E007BCB8B /* forrest.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA81316392E2E007BCB8B /* forrest.png */; };
-		885BA81616392F6C007BCB8B /* forrest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA81516392F6C007BCB8B /* forrest@2x.png */; };
-		885BA82316397917007BCB8B /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA82116397917007BCB8B /* tree.png */; };
-		885BA82416397917007BCB8B /* tree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA82216397917007BCB8B /* tree@2x.png */; };
 		885BA82D163986CB007BCB8B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885BA82C163986CB007BCB8B /* QuartzCore.framework */; };
 		885BA82E163987B2007BCB8B /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 885BA82B16398573007BCB8B /* UIImage+Color.m */; };
-		885BA834163989E0007BCB8B /* tree_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA82F163989DF007BCB8B /* tree_orig.png */; };
-		885BA835163989E0007BCB8B /* tree-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA830163989DF007BCB8B /* tree-dark.png */; };
-		885BA836163989E0007BCB8B /* tree-dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA831163989DF007BCB8B /* tree-dark@2x.png */; };
-		885BA837163989E0007BCB8B /* tree-middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA832163989E0007BCB8B /* tree-middle.png */; };
-		885BA838163989E0007BCB8B /* tree-middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA833163989E0007BCB8B /* tree-middle@2x.png */; };
-		885BA83B16398CC6007BCB8B /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83916398CC6007BCB8B /* moon.png */; };
-		885BA83C16398CC6007BCB8B /* moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83A16398CC6007BCB8B /* moon@2x.png */; };
-		885BA83F163997A7007BCB8B /* stars-backgorund.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83D163997A7007BCB8B /* stars-backgorund.png */; };
-		885BA840163997A7007BCB8B /* stars-backgorund@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885BA83E163997A7007BCB8B /* stars-backgorund@2x.png */; };
 		889D574E166A94C100F7D5E5 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889D574D166A94C100F7D5E5 /* A3ParallaxScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		882818C1185F4C0E0081D962 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = A3ParallaxScrollViewSample/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		882AC78C1637F38000E8A221 /* A3ParallaxScrollViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A3ParallaxScrollViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AC7901637F38000E8A221 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		882AC7921637F38000E8A221 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,28 +33,12 @@
 		882AC79E1637F38000E8A221 /* A3ParallaxScrollViewSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A3ParallaxScrollViewSample-Prefix.pch"; sourceTree = "<group>"; };
 		882AC79F1637F38000E8A221 /* A3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3AppDelegate.h; sourceTree = "<group>"; };
 		882AC7A01637F38000E8A221 /* A3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3AppDelegate.m; sourceTree = "<group>"; };
-		882AC7A21637F38000E8A221 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		882AC7A41637F38000E8A221 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		882AC7A61637F38000E8A221 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		882AC7A81637F38000E8A221 /* A3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3ViewController.h; sourceTree = "<group>"; };
 		882AC7A91637F38000E8A221 /* A3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3ViewController.m; sourceTree = "<group>"; };
 		882AC7AC1637F38000E8A221 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3ViewController.xib; sourceTree = "<group>"; };
-		885BA81316392E2E007BCB8B /* forrest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forrest.png; sourceTree = "<group>"; };
-		885BA81516392F6C007BCB8B /* forrest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forrest@2x.png"; sourceTree = "<group>"; };
-		885BA82116397917007BCB8B /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
-		885BA82216397917007BCB8B /* tree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree@2x.png"; sourceTree = "<group>"; };
 		885BA82A16398573007BCB8B /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		885BA82B16398573007BCB8B /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		885BA82C163986CB007BCB8B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		885BA82F163989DF007BCB8B /* tree_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_orig.png; sourceTree = "<group>"; };
-		885BA830163989DF007BCB8B /* tree-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-dark.png"; sourceTree = "<group>"; };
-		885BA831163989DF007BCB8B /* tree-dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-dark@2x.png"; sourceTree = "<group>"; };
-		885BA832163989E0007BCB8B /* tree-middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-middle.png"; sourceTree = "<group>"; };
-		885BA833163989E0007BCB8B /* tree-middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-middle@2x.png"; sourceTree = "<group>"; };
-		885BA83916398CC6007BCB8B /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
-		885BA83A16398CC6007BCB8B /* moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon@2x.png"; sourceTree = "<group>"; };
-		885BA83D163997A7007BCB8B /* stars-backgorund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-backgorund.png"; sourceTree = "<group>"; };
-		885BA83E163997A7007BCB8B /* stars-backgorund@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-backgorund@2x.png"; sourceTree = "<group>"; };
 		889D574C166A94C100F7D5E5 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3ParallaxScrollView.h; sourceTree = "<group>"; };
 		889D574D166A94C100F7D5E5 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3ParallaxScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +95,7 @@
 				882AC7A81637F38000E8A221 /* A3ViewController.h */,
 				882AC7A91637F38000E8A221 /* A3ViewController.m */,
 				882AC7AB1637F38000E8A221 /* A3ViewController.xib */,
+				882818C1185F4C0E0081D962 /* Images.xcassets */,
 				882AC7971637F38000E8A221 /* Supporting Files */,
 			);
 			name = A3ParallaxScrollViewSample;
@@ -136,26 +107,10 @@
 			children = (
 				885BA82A16398573007BCB8B /* UIImage+Color.h */,
 				885BA82B16398573007BCB8B /* UIImage+Color.m */,
-				885BA81316392E2E007BCB8B /* forrest.png */,
-				885BA81516392F6C007BCB8B /* forrest@2x.png */,
-				885BA82116397917007BCB8B /* tree.png */,
-				885BA82216397917007BCB8B /* tree@2x.png */,
-				885BA82F163989DF007BCB8B /* tree_orig.png */,
-				885BA830163989DF007BCB8B /* tree-dark.png */,
-				885BA831163989DF007BCB8B /* tree-dark@2x.png */,
-				885BA832163989E0007BCB8B /* tree-middle.png */,
-				885BA833163989E0007BCB8B /* tree-middle@2x.png */,
-				885BA83916398CC6007BCB8B /* moon.png */,
-				885BA83A16398CC6007BCB8B /* moon@2x.png */,
-				885BA83D163997A7007BCB8B /* stars-backgorund.png */,
-				885BA83E163997A7007BCB8B /* stars-backgorund@2x.png */,
 				882AC7981637F38000E8A221 /* A3ParallaxScrollViewSample-Info.plist */,
 				882AC7991637F38000E8A221 /* InfoPlist.strings */,
 				882AC79C1637F38000E8A221 /* main.m */,
 				882AC79E1637F38000E8A221 /* A3ParallaxScrollViewSample-Prefix.pch */,
-				882AC7A21637F38000E8A221 /* Default.png */,
-				882AC7A41637F38000E8A221 /* Default@2x.png */,
-				882AC7A61637F38000E8A221 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +154,11 @@
 				CLASSPREFIX = A3;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = AllAboutApps;
+				TargetAttributes = {
+					882AC78B1637F38000E8A221 = {
+						DevelopmentTeam = EBR4XBKU3F;
+					};
+				};
 			};
 			buildConfigurationList = 882AC7861637F38000E8A221 /* Build configuration list for PBXProject "A3ParallaxScrollViewSample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -223,23 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				882AC79B1637F38000E8A221 /* InfoPlist.strings in Resources */,
-				882AC7A31637F38000E8A221 /* Default.png in Resources */,
-				882AC7A51637F38000E8A221 /* Default@2x.png in Resources */,
-				882AC7A71637F38000E8A221 /* Default-568h@2x.png in Resources */,
 				882AC7AD1637F38000E8A221 /* A3ViewController.xib in Resources */,
-				885BA81416392E2E007BCB8B /* forrest.png in Resources */,
-				885BA81616392F6C007BCB8B /* forrest@2x.png in Resources */,
-				885BA82316397917007BCB8B /* tree.png in Resources */,
-				885BA82416397917007BCB8B /* tree@2x.png in Resources */,
-				885BA834163989E0007BCB8B /* tree_orig.png in Resources */,
-				885BA835163989E0007BCB8B /* tree-dark.png in Resources */,
-				885BA836163989E0007BCB8B /* tree-dark@2x.png in Resources */,
-				885BA837163989E0007BCB8B /* tree-middle.png in Resources */,
-				885BA838163989E0007BCB8B /* tree-middle@2x.png in Resources */,
-				885BA83B16398CC6007BCB8B /* moon.png in Resources */,
-				885BA83C16398CC6007BCB8B /* moon@2x.png in Resources */,
-				885BA83F163997A7007BCB8B /* stars-backgorund.png in Resources */,
-				885BA840163997A7007BCB8B /* stars-backgorund@2x.png in Resources */,
+				882818C2185F4C0E0081D962 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,13 +276,17 @@
 		882AC7B11637F38000E8A221 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Christian Kaar (L2QDLEBB7A)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Prefix.pch";
 				INFOPLIST_FILE = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = A3ParallaxScrollViewSample;
-				PROVISIONING_PROFILE = "A3E94706-5D4A-49A8-99D3-F4834A0E7F65";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -346,13 +295,17 @@
 		882AC7B21637F38000E8A221 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Christian Kaar (L2QDLEBB7A)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Prefix.pch";
 				INFOPLIST_FILE = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = A3ParallaxScrollViewSample;
-				PROVISIONING_PROFILE = "A3E94706-5D4A-49A8-99D3-F4834A0E7F65";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

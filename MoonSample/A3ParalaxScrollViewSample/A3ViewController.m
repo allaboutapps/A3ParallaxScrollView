@@ -3,7 +3,7 @@
 //  A3ParallaxScrollViewSample
 //
 //  Created by Botond Kis on 24.10.12.
-//  Copyright (c) 2012 AllAboutApps. All rights reserved.
+//  Copyright (c) 2013 AllAboutApps. All rights reserved.
 //
 
 #import "A3ViewController.h"
@@ -11,11 +11,9 @@
 #import "UIImage+Color.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface A3ViewController (){
-    A3ParallaxScrollView *scrollView;
-    UIImageView *imageViewMoon;
-}
-
+@interface A3ViewController ()
+@property (strong, nonatomic) A3ParallaxScrollView *scrollView;
+@property (strong, nonatomic) UIImageView *imageViewMoon;
 @end
 
 @implementation A3ViewController
@@ -29,19 +27,18 @@ static int scrollViewWithMultiplier = 6;
     // get forrest BG Image
     UIImage *backgroundImage = [UIImage imageNamed:@"forrest.png"];
     
-    
     // init and set up the scrollview
-    scrollView = [[A3ParallaxScrollView alloc] initWithFrame:self.view.bounds];
-    scrollView.contentSize = CGSizeMake(backgroundImage.size.width*scrollViewWithMultiplier, self.view.frame.size.height+40);
-    scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    scrollView.showsHorizontalScrollIndicator = scrollView.showsVerticalScrollIndicator = NO;
-    scrollView.delegate = self;
-    scrollView.directionalLockEnabled = NO;
-    [self.view addSubview:scrollView];
+    self.scrollView = [[A3ParallaxScrollView alloc] initWithFrame:self.view.bounds];
+    self.scrollView.contentSize = CGSizeMake(backgroundImage.size.width*scrollViewWithMultiplier, self.view.frame.size.height+40);
+    self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.scrollView.showsHorizontalScrollIndicator = self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.delegate = self;
+    self.scrollView.directionalLockEnabled = NO;
+    [self.view addSubview:self.scrollView];
     
     
     // add star background
-    UIImageView *imageViewStarsBackground = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"stars-backgorund.png"]];
+    UIImageView *imageViewStarsBackground = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"stars-backgorund"]];
     imageViewStarsBackground.contentMode = UIViewContentModeScaleToFill;
     CGRect frameImageViewStars = imageViewStarsBackground.frame;
     frameImageViewStars.origin.x = -30;
@@ -49,22 +46,21 @@ static int scrollViewWithMultiplier = 6;
     frameImageViewStars.size.width *=1.5;
     frameImageViewStars.size.height *=1.5;
     imageViewStarsBackground.frame = frameImageViewStars;
-    [scrollView addSubview:imageViewStarsBackground withAcceleration:CGPointMake(((15)/scrollView.contentSize.width), -0.01)];
-    [imageViewStarsBackground release];
+    [self.scrollView addSubview:imageViewStarsBackground withAcceleration:CGPointMake(((15)/self.scrollView.contentSize.width), -0.01)];
     
 
     // add moon
-    imageViewMoon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"moon.png"]];
-    imageViewMoon.contentMode = UIViewContentModeScaleToFill;
+    self.imageViewMoon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"moon"]];
+    self.imageViewMoon.contentMode = UIViewContentModeScaleToFill;
     CGFloat mWitdh = self.view.frame.size.width;
-    CGRect frameImageViewMoon = imageViewMoon.frame;
+    CGRect frameImageViewMoon = self.imageViewMoon.frame;
     frameImageViewMoon.size.height *= 0.50f;
     frameImageViewMoon.size.width *= 0.50f;
     frameImageViewMoon.origin.x = -frameImageViewMoon.size.width/2.0f;
     frameImageViewMoon.origin.y = -frameImageViewMoon.size.height * 0.25f;
-    imageViewMoon.frame = frameImageViewMoon;
-    CGFloat xAccelMoon = -(mWitdh+frameImageViewMoon.size.width/2.0f)/scrollView.contentSize.width;
-    [scrollView addSubview:imageViewMoon withAcceleration:CGPointMake(xAccelMoon, 0.025)];
+    self.imageViewMoon.frame = frameImageViewMoon;
+    CGFloat xAccelMoon = -(mWitdh+frameImageViewMoon.size.width/2.0f)/self.scrollView.contentSize.width;
+    [self.scrollView addSubview:self.imageViewMoon withAcceleration:CGPointMake(xAccelMoon, 0.025)];
     
     
     // add background image
@@ -76,8 +72,7 @@ static int scrollViewWithMultiplier = 6;
         frameImageView.origin.y = 200.0f;
         frameImageView.size.height = self.view.frame.size.height-88.0f;
         imageViewForrest.frame = frameImageView;
-        [scrollView addSubview:imageViewForrest withAcceleration:CGPointMake(0.05f, 0.05f)];
-        [imageViewForrest release];
+        [self.scrollView addSubview:imageViewForrest withAcceleration:CGPointMake(0.05f, 0.05f)];
     }
     
     ////
@@ -93,8 +88,7 @@ static int scrollViewWithMultiplier = 6;
         frameImageView.size.height *= 0.7f;
         frameImageView.size.width *= 0.7f;
         imageViewTree.frame = frameImageView;
-        [scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.2f, 0.2f)];
-        [imageViewTree release];
+        [self.scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.2f, 0.2f)];
     }
     
     for (int i = -1; i < scrollViewWithMultiplier*14+1; i++) {
@@ -106,8 +100,7 @@ static int scrollViewWithMultiplier = 6;
         frameImageView.size.height *= 0.8f;
         frameImageView.size.width *= 0.8f;
         imageViewTree.frame = frameImageView;
-        [scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.4f, 0.4f)];
-        [imageViewTree release];
+        [self.scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.4f, 0.4f)];
     }
     
     // middle
@@ -121,8 +114,7 @@ static int scrollViewWithMultiplier = 6;
         frameImageView.size.height *= 0.90f;
         frameImageView.size.width *= 0.90f;
         imageViewTree.frame = frameImageView;
-        [scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.6f, 0.6f)];
-        [imageViewTree release];
+        [self.scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.6f, 0.6f)];
     }
     
     // near
@@ -136,8 +128,7 @@ static int scrollViewWithMultiplier = 6;
         frameImageView.size.height *= 1.0f;
         frameImageView.size.width *= 1.0f;
         imageViewTree.frame = frameImageView;
-        [scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.8f, 0.8f)];
-        [imageViewTree release];
+        [self.scrollView addSubview:imageViewTree withAcceleration:CGPointMake(0.8f, 0.8f)];
     }
     
     // add label
@@ -148,12 +139,11 @@ static int scrollViewWithMultiplier = 6;
     labelText.font = [UIFont systemFontOfSize:24];
     labelText.text = @"P4r4L4X";
     [labelText sizeToFit];
-    CGFloat xAccelText = -((self.view.frame.size.width-labelText.frame.size.width+20)/scrollView.contentSize.width);
-    [scrollView addSubview:labelText withAcceleration:CGPointMake(xAccelText, 0)];
-    [labelText release];
+    CGFloat xAccelText = -((self.view.frame.size.width-labelText.frame.size.width+20)/self.scrollView.contentSize.width);
+    [self.scrollView addSubview:labelText withAcceleration:CGPointMake(xAccelText, 0)];
     
     // content offset
-    scrollView.contentOffset = CGPointMake((scrollView.contentSize.width-scrollView.frame.size.width)/2.0f, 0);
+    self.scrollView.contentOffset = CGPointMake((self.scrollView.contentSize.width-self.scrollView.frame.size.width)/2.0f, 0);
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -165,11 +155,6 @@ static int scrollViewWithMultiplier = 6;
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
-    [super dealloc];
-    [scrollView release];
-    [imageViewMoon release];
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{    
     return YES;
@@ -184,15 +169,15 @@ static int scrollViewWithMultiplier = 6;
     // calc new moon acceleration
     CGFloat width = UIInterfaceOrientationIsLandscape(toInterfaceOrientation)?self.view.frame.size.height:self.view.frame.size.width;
     
-    CGFloat xAccelMoon = -(width+imageViewMoon.frame.size.width/2.0f)/scrollView.contentSize.width;
+    CGFloat xAccelMoon = -(width+self.imageViewMoon.frame.size.width/2.0f)/self.scrollView.contentSize.width;
     CGPoint accel = CGPointMake(xAccelMoon, 0.0f);
     
     // set the new animation
-    [scrollView setAcceleration:accel forView:imageViewMoon];
+    [self.scrollView setAcceleration:accel forView:self.imageViewMoon];
     
     // animate layout
     [UIView animateWithDuration:duration animations:^{
-        [scrollView setNeedsLayout];
+        [self.scrollView setNeedsLayout];
     }];
 }
 
@@ -208,30 +193,20 @@ static int scrollViewWithMultiplier = 6;
     CGFloat yMultiplier = cosf(normalizedContentOffsetX*M_PI);
     
     // remember orig transform
-    CGAffineTransform trans = imageViewMoon.transform;
+    CGAffineTransform trans = self.imageViewMoon.transform;
     
     // reset transform bacause frame won't return a useful frame if a transform is applied
-    imageViewMoon.transform = CGAffineTransformIdentity;
+    self.imageViewMoon.transform = CGAffineTransformIdentity;
     
     // do calculation
-    CGRect newMoonFrame = imageViewMoon.frame;
+    CGRect newMoonFrame = self.imageViewMoon.frame;
     newMoonFrame.origin.y = newMoonFrame.size.height*0.66f*yMultiplier + (newMoonFrame.size.height*0.66f);
     
     // assign new frame
-    imageViewMoon.frame = newMoonFrame;
+    self.imageViewMoon.frame = newMoonFrame;
     
     // apply original transform
-    imageViewMoon.transform = trans;
+    self.imageViewMoon.transform = trans;
 }
 
 @end
-
-
-
-
-
-
-
-
-
-

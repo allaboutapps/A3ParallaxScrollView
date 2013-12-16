@@ -4,7 +4,7 @@
 //
 //  A3ParallaxScrollView for iOS
 //  Created by Botond Kis on 24.10.12.
-//  Copyright (c) 2012 aaa - All About Apps
+//  Copyright (c) 2013 aaa - All About Apps
 //  Developed by Botond Kis
 //  All rights reserved.
 //
@@ -46,7 +46,7 @@ extern CGPoint const A3DefaultAcceleration;
 @interface A3ParallaxScrollView : UIScrollView
 
 /**
- @description Adds a Subview to the Scrollview with a specific acceleration.
+ @brief Adds a Subview to the Scrollview with a specific acceleration.
  @param view The View wich will be added as subview.
  @param acceleration Acceleration of a View. ScrollViews default behaviour is CGPoint{1.0f, 1.0f} (via [addSubview]).
  */
@@ -54,7 +54,7 @@ extern CGPoint const A3DefaultAcceleration;
 
 
 /**
- @description Sets the acceleration of an Subview.
+ @brief Sets the acceleration of an Subview.
  @param acceleration Acceleration of a View. ScrollViews default behaviour is CGPoint{1.0f, 1.0f} (via [addSubview]).
  @param view The View wich acceleration will be set.
  */
@@ -62,7 +62,7 @@ extern CGPoint const A3DefaultAcceleration;
 
 
 /**
- @description Gets the acceleration for a subview.
+ @brief Gets the acceleration for a subview.
  @return acceleration Acceleration of the specified View.
  @param view The View wich acceleration should be returned.
  */

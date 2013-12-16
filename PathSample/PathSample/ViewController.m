@@ -3,14 +3,14 @@
 //  PathSample
 //
 //  Created by Botond Kis on 01.12.12.
-//  Copyright (c) 2012 aaa - AllAboutApps. All rights reserved.
+//  Copyright (c) 2013 aaa - AllAboutApps. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "A3ParallaxScrollView.h"
 
 @interface ViewController ()
-@property (nonatomic, retain) A3ParallaxScrollView *parallaxScrollView;
+@property (nonatomic, strong) A3ParallaxScrollView *parallaxScrollView;
 @end
 
 @implementation ViewController
@@ -47,11 +47,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
-    [_viewHeader release];
-    [_viewContent release];
-    [super dealloc];
-}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     // accelerate header just with half speed down, but with normal speed up

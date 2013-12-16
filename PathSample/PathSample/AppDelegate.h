@@ -3,7 +3,7 @@
 //  PathSample
 //
 //  Created by Botond Kis on 01.12.12.
-//  Copyright (c) 2012 aaa - AllAboutApps. All rights reserved.
+//  Copyright (c) 2013 aaa - AllAboutApps. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

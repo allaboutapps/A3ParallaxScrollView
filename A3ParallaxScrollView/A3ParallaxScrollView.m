@@ -4,7 +4,7 @@
 //
 //  A3ParallaxScrollView for iOS
 //  Created by Botond Kis on 24.10.12.
-//  Copyright (c) 2012 aaa - All About Apps
+//  Copyright (c) 2013 aaa - All About Apps
 //  Developed by Botond Kis
 //  All rights reserved.
 //
@@ -41,52 +41,21 @@
 CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 
 @interface A3ParallaxScrollView ()
-@property (nonatomic, retain) NSMutableDictionary *_accelerationsOfSubViews;
-
-- (void)_init;
-
+@property (nonatomic, strong) NSMutableDictionary *accelerationsOfSubViews;
 @end
 
 @implementation A3ParallaxScrollView
-@synthesize _accelerationsOfSubViews;
 
 //====================================================================
-#pragma mark - memory & initialization
+#pragma mark - properties
 
-// designated init
-- (void)_init{
-    _accelerationsOfSubViews = [[NSMutableDictionary alloc] init];
-}
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self _init];
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self _init];
-    }
-    return self;
-}
-
-- (id)init{
-    self = [super init];
-    if (self) {
-        [self _init];
-    }
-    return self;
-}
-
-- (void)dealloc{
-    [_accelerationsOfSubViews release];
+- (NSMutableDictionary *)accelerationsOfSubViews{
     
-    [super dealloc];
+    // lazy load dictionary
+    if (!_accelerationsOfSubViews) {
+        _accelerationsOfSubViews = [NSMutableDictionary dictionary];
+    }
+    return _accelerationsOfSubViews;
 }
 
 
@@ -107,29 +76,28 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 
 - (void)setAcceleration:(CGPoint) acceleration forView:(UIView *)view{
     // store acceleration
-    NSValue *pointValue = [NSValue value:&acceleration withObjCType:@encode(CGPoint)];
-    [self._accelerationsOfSubViews setObject:pointValue forKey:@((int)view)];
+    (self.accelerationsOfSubViews)[@((int)view)] = NSStringFromCGPoint(acceleration);
 }
 
 - (CGPoint)accelerationForView:(UIView *)view{
     
-    // return
+    // return var
     CGPoint accelecration;
     
     // get acceleration
-    NSValue *pointValue = [self._accelerationsOfSubViews objectForKey:@((int)view)];
+    NSString *pointValue = (self.accelerationsOfSubViews)[@((int)view)];
     if(pointValue == nil){
         accelecration = CGPointZero;
     }
     else{
-        [pointValue getValue:&accelecration];
+        accelecration = CGPointFromString(pointValue);
     }
     
     return accelecration;
 }
 
 - (void)willRemoveSubview:(UIView *)subview{
-    [self._accelerationsOfSubViews removeObjectForKey:@((int)subview)];
+    [self.accelerationsOfSubViews removeObjectForKey:@((int)subview)];
 }
 
 //====================================================================
@@ -137,6 +105,8 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
 
 - (void)layoutSubviews{
     [super layoutSubviews];
+    
+    
     for (UIView *v in self.subviews) {
         // get acceleration
         CGPoint accelecration = [self accelerationForView:v];
