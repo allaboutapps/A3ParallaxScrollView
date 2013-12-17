@@ -2,9 +2,7 @@
 #What is A3ParallaxScrollView?
 **A3ParallaxScrollView** is a `UIScrollView` subclass with a parallax scrolling effect on iPhone and iPad.  
 
-It is written in *Objective-C* and works for all iOS applications.  
-ARC is not enabled for the project, but you can easily convert it to arc with the XCode built in ARC converter or by remove the dealloc method and the two or three `release` calls.  
-If you are too lazy for that, you can still set the `-fno-objc-arc` compiler flag.
+It is written in *Objective-C* and works for all iOS applications using ARC.
 
 ##Video:
 Here are two examples of the use of **A3ParallaxScrollView**.  
@@ -33,4 +31,4 @@ Feel free to fork and make pull requests! We are also very happy if you tell us 
 
 
 ![aaa - AllAboutApps](https://dl.dropbox.com/u/9934540/aaa/aaaLogo.png "aaa - AllAboutApps")  
-[© allaboutapps 2012](http://www.allaboutapps.at) [dev by yinkou](https://github.com/yinkou)
+[© allaboutapps 2013](http://www.allaboutapps.at) [dev by yinkou](https://github.com/yinkou)
