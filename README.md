@@ -10,25 +10,43 @@ The first is a little Demo with a lot of views and additional custom transformat
 The other one shows a *Path* like scrolling behaviour.  
 ![A3ParallaxScrollView sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewSample.gif "A3ParallaxScrollView Sample Video")
 ![A3ParallaxScrollView Path like sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewPathSample.gif "A3ParallaxScrollView Path like Sample Video")  
-Both sample projects are in the repository.
+Both sample projects are included in the github repository.
+
+##Installation
+
+###With CocoaPods:
+A3ParallaxScrollView is available on [CocoaPods](http://cocoapods.org) . Just add the following to your project Podfile:
+
+####Podfile
+	platform :ios, '7.0'
+	pod "A3ParallaxScrollView", "~> 1.0"
+	
+	
+###Manualy:
+Download the `A3ParallaxScrollView.h/.m` files and add them to your Project. There are no dependencies.
 
 ##Usage:
-Add the **A3ParallaxScrollView** directory to your project.  
-Initialize a **A3ParallaxScrollView** like any other View by code or in the InterfaceBuilder.
-Now you can add any views to it with a specified acceleration:
+Include **A3ParallaxScrollView** by the folowing import.
+
+	#import "A3ParallaxScrollView.h"
+
+Initialize a **A3ParallaxScrollView** like any regular `UIScrollView` by code or in the InterfaceBuilder.
+
+#### Update Accelerations
+You can add any views to it with a specified acceleration:
 
 `- (void)addSubview:(UIView *)view withAcceleration:(CGPoint) acceleration`
 
-or you can simply add a subview to your **A3ParallaxScrollView** and set his acceleration afterwards with acceleration setter.
+Or you can simply add a subview to your **A3ParallaxScrollView** and set his acceleration afterwards with acceleration setter.
 
 `- (void)setAcceleration:(CGPoint) acceleration forView:(UIView *)view`
  
 #License:
-[See our BSD 3-Clause License](https://github.com/allaboutapps/A3ParallaxScrollView/blob/master/LICENSE.txt)
+[See our MIT License](https://github.com/allaboutapps/A3ParallaxScrollView/blob/master/LICENSE)
 
 #Contribute:
 Feel free to fork and make pull requests! We are also very happy if you tell us about your app(s) which use this control.  
 
 
 ![aaa - AllAboutApps](https://dl.dropbox.com/u/9934540/aaa/aaaLogo.png "aaa - AllAboutApps")  
-[© allaboutapps 2013](http://www.allaboutapps.at) [dev by yinkou](https://github.com/yinkou)
+[© allaboutapps 2014](http://www.allaboutapps.at) [dev by Botond Kis](https://github.com/yinkou)
