@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "A3ParallaxScrollView"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "A UIScrollview subclass with a high performance parallax scrolling effect"
   s.description      = "**A3ParallaxScrollView** is a `UIScrollView` subclass with a parallax scrolling effect on iPhone and iPad. "
 
