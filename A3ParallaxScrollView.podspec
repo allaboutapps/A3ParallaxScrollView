@@ -15,4 +15,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'A3ParallaxScrollView'
+  s.screenshots = [ "https://dl.dropbox.com/u/9934540/aaa/A3ParallaxMoonSample.gif",
+                    "https://dl.dropbox.com/u/9934540/aaa/A3ParallaxMoonSample.png" ]
 end
