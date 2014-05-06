@@ -8,7 +8,7 @@ It is written in *Objective-C* and works for all iOS applications using ARC.
 Here are two examples of the use of **A3ParallaxScrollView**.  
 The first is a little Demo with a lot of views and additional custom transformations (sine movement of the moon).  
 The other one shows a *Path* like scrolling behaviour.  
-![A3ParallaxScrollView sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewSample.gif "A3ParallaxScrollView Sample Video")
+![A3ParallaxScrollView sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxMoonSample.gif "A3Parallax Moon Sample Video")
 ![A3ParallaxScrollView Path like sample](https://dl.dropbox.com/u/9934540/aaa/A3ParallaxScrollViewPathSample.gif "A3ParallaxScrollView Path like Sample Video")  
 Both sample projects are included in the github repository.
 
