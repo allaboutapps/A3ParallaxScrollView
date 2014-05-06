@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "tree_orig.png"
+      "filename" : "slenderface.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "slenderface@2x.png"
     }
   ],
   "info" : {

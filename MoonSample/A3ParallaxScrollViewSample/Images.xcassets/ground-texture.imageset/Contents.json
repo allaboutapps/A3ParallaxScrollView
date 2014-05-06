@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "tree_orig.png"
+      "filename" : "ground-texture.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "ground-texture@2x.png"
     }
   ],
   "info" : {

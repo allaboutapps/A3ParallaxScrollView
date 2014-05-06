@@ -16,6 +16,8 @@
 		882AC7A11637F38000E8A221 /* A3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882AC7A01637F38000E8A221 /* A3AppDelegate.m */; };
 		882AC7AA1637F38000E8A221 /* A3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882AC7A91637F38000E8A221 /* A3ViewController.m */; };
 		882AC7AD1637F38000E8A221 /* A3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882AC7AB1637F38000E8A221 /* A3ViewController.xib */; };
+		884E5E2C1918DD1800CA5CB7 /* scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 884E5E2B1918DD1800CA5CB7 /* scream.mp3 */; };
+		884E5E301918DD5600CA5CB7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884E5E2F1918DD5600CA5CB7 /* AVFoundation.framework */; };
 		885BA82D163986CB007BCB8B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885BA82C163986CB007BCB8B /* QuartzCore.framework */; };
 		885BA82E163987B2007BCB8B /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 885BA82B16398573007BCB8B /* UIImage+Color.m */; };
 		889D574E166A94C100F7D5E5 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889D574D166A94C100F7D5E5 /* A3ParallaxScrollView.m */; };
@@ -23,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		882818C1185F4C0E0081D962 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = A3ParallaxScrollViewSample/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		882AC78C1637F38000E8A221 /* A3ParallaxScrollViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A3ParallaxScrollViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		882AC78C1637F38000E8A221 /* A3ParallaxScrollView Moon Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A3ParallaxScrollView Moon Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AC7901637F38000E8A221 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		882AC7921637F38000E8A221 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		882AC7941637F38000E8A221 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,6 +38,9 @@
 		882AC7A81637F38000E8A221 /* A3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3ViewController.h; sourceTree = "<group>"; };
 		882AC7A91637F38000E8A221 /* A3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3ViewController.m; sourceTree = "<group>"; };
 		882AC7AC1637F38000E8A221 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3ViewController.xib; sourceTree = "<group>"; };
+		884E5E2B1918DD1800CA5CB7 /* scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scream.mp3; path = "../../../../../../Downloads/1548-Scary Scream-SoundBible.com-1115384336/mp3/scream.mp3"; sourceTree = "<group>"; };
+		884E5E2D1918DD2900CA5CB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		884E5E2F1918DD5600CA5CB7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		885BA82A16398573007BCB8B /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		885BA82B16398573007BCB8B /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		885BA82C163986CB007BCB8B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884E5E301918DD5600CA5CB7 /* AVFoundation.framework in Frameworks */,
 				885BA82D163986CB007BCB8B /* QuartzCore.framework in Frameworks */,
 				882AC7911637F38000E8A221 /* UIKit.framework in Frameworks */,
 				882AC7931637F38000E8A221 /* Foundation.framework in Frameworks */,
@@ -61,7 +67,6 @@
 		882AC7811637F38000E8A221 = {
 			isa = PBXGroup;
 			children = (
-				885BA82C163986CB007BCB8B /* QuartzCore.framework */,
 				889D574B166A94C100F7D5E5 /* A3ParallaxScrollView */,
 				882AC7961637F38000E8A221 /* A3ParallaxScrollViewSample */,
 				882AC78F1637F38000E8A221 /* Frameworks */,
@@ -72,7 +77,7 @@
 		882AC78D1637F38000E8A221 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				882AC78C1637F38000E8A221 /* A3ParallaxScrollViewSample.app */,
+				882AC78C1637F38000E8A221 /* A3ParallaxScrollView Moon Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +85,9 @@
 		882AC78F1637F38000E8A221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				885BA82C163986CB007BCB8B /* QuartzCore.framework */,
+				884E5E2F1918DD5600CA5CB7 /* AVFoundation.framework */,
+				884E5E2D1918DD2900CA5CB7 /* AudioToolbox.framework */,
 				882AC7901637F38000E8A221 /* UIKit.framework */,
 				882AC7921637F38000E8A221 /* Foundation.framework */,
 				882AC7941637F38000E8A221 /* CoreGraphics.framework */,
@@ -105,6 +113,7 @@
 		882AC7971637F38000E8A221 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				884E5E2B1918DD1800CA5CB7 /* scream.mp3 */,
 				885BA82A16398573007BCB8B /* UIImage+Color.h */,
 				885BA82B16398573007BCB8B /* UIImage+Color.m */,
 				882AC7981637F38000E8A221 /* A3ParallaxScrollViewSample-Info.plist */,
@@ -142,7 +151,7 @@
 			);
 			name = A3ParallaxScrollViewSample;
 			productName = A3ParalaxScrollViewSample;
-			productReference = 882AC78C1637F38000E8A221 /* A3ParallaxScrollViewSample.app */;
+			productReference = 882AC78C1637F38000E8A221 /* A3ParallaxScrollView Moon Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,6 +194,7 @@
 				882AC79B1637F38000E8A221 /* InfoPlist.strings in Resources */,
 				882AC7AD1637F38000E8A221 /* A3ViewController.xib in Resources */,
 				882818C2185F4C0E0081D962 /* Images.xcassets in Resources */,
+				884E5E2C1918DD1800CA5CB7 /* scream.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +256,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -266,7 +276,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -284,8 +294,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Prefix.pch";
 				INFOPLIST_FILE = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = A3ParallaxScrollViewSample;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "A3ParallaxScrollView Moon Sample";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -303,8 +313,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Prefix.pch";
 				INFOPLIST_FILE = "A3ParalaxScrollViewSample/A3ParallaxScrollViewSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = A3ParallaxScrollViewSample;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "A3ParallaxScrollView Moon Sample";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
