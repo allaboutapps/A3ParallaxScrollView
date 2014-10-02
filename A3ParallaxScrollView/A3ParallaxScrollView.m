@@ -105,7 +105,7 @@ CGPoint const A3DefaultAcceleration = (CGPoint){1.0f, 1.0f};
         CGPoint accelecration = [self accelerationForView:v];
         
         // move the view
-        v.transform = CGAffineTransformMakeTranslation(self.contentOffset.x*(1.0f-accelecration.x), self.contentOffset.y*(1.0f-accelecration.y));
+        v.layer.affineTransform = CGAffineTransformMakeTranslation(self.contentOffset.x*(1.0f-accelecration.x), self.contentOffset.y*(1.0f-accelecration.y));
     }
 }
 
